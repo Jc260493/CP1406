@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Homepage</title>
+<link href="mainstyles.css" rel="stylesheet" type="text/css">
+<script type="text/javascript">
+
+var slideimages = new Array() 
+slideimages[0] = new Image() 
+slideimages[0].src = "images/1.jpg"
+slideimages[1] = new Image()
+slideimages[1].src = "images/2.jpg"
+slideimages[2] = new Image()
+slideimages[2].src = "images/3.jpg"
+
+</script>
+
+</head>
+
+<body>
+<div id="container">
+<div id="header">
+<h1> Townsville Community Music Centre</h1>
+</div>
+<div id="navbar">
+<nav> Events | Bulletin Board | Musos | Members | Sponsors | About Us</nav>
+</div>
+<div id="content">
+<h2> Title of Something here</h2>
+<div id="imagedisplay">
+<img src="images/1.jpg" id="slide" width="400px" height="400px">
+<script type="text/javascript">
+
+var step=0
+
+function slideit(){
+ if (!document.images)
+  return
+ document.getElementById('slide').src = slideimages[step].src
+ if (step<2)
+  step++
+ else
+  step=0
+ setTimeout("slideit()",2500)
+}
+
+slideit()
+
+</script>
+</div>
+<p> Theres Some content going on here with important text and images that can be replaced later but i need some stuff so i can mess with CSS so thanks but i just want to take up some serious levels of whitespace while i say and teach you absolutely nothing but that i can bullshit without saying anything meaningful for a serious amount of time without stopping to think about what im typing btw when can we please /vote kick Nick Mclean?</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+</div>
+<div id="footer">
+<footer> Copyright 2015 Steal this shit and get sued</footer>
+</div>
+</div>
+</body>
+</html>
