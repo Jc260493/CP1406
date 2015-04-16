@@ -24,9 +24,9 @@ $sql2 = "SELECT * FROM categories WHERE id = $id";
 foreach ($dbh->query($sql2) as $row){
 	printf("%s<br/>\n", $row[category]);
 }
-
-
-
 ?>
+
+<a href = "artist.php">Return to Artist Page</a>;
+
 </body>
 </html>

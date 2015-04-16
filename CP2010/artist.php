@@ -53,7 +53,7 @@ include("dbconnect.php")
       <input type="text" name="category" id="category">
     </p>
 	<p>
-	   <label for="image">Image: </label>
+	   <label for="uploadedimage">Image: </label>
 	   <input type="file" name = "uploadedimage">
 	</p>
     <p>

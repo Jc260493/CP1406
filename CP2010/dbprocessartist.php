@@ -18,11 +18,14 @@ include("dbconnect.php");
 <?php
 
 
+
+
  if ($_REQUEST['submit'] == "Insert Entry"){
 	$sql = "INSERT INTO artist (name, details, contact, perf_date, perf_loc, category) VALUES ('$_REQUEST[name]', '$_REQUEST[details]', '$_REQUEST[contact]', '$_REQUEST[perf_date]', '$_REQUEST[perf_loc]', '$_REQUEST[category]')";
     if($dbh->exec($sql)){
         echo 'inserted';
     }else{ echo 'not inserted';}
+
      
      
 	$test = "SELECT * FROM artist WHERE name = '$_REQUEST[name]'";
