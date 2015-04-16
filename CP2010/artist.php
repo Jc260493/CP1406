@@ -23,7 +23,7 @@ include("dbconnect.php")
 
 <body>
 
-<h1>Artist Database</h1>
+<h1>Artist Database?</h1>
 
 <form id="insert" name="insert" method="post" action="dbprocessartist.php">
 <fieldset class="subtleSet">

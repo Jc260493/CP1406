@@ -59,13 +59,13 @@ include("dbconnect.php");
 	$dbh->exec($sql2); 
 	
 	
-	$test = "SELECT * FROM artist WHERE id = '$_REQUEST[id]'";
+	$test = "SELECT * FROM artist WHERE name = '$_REQUEST[name]'";
 	foreach ($dbh->query($test) as $row){
 		$length = count(explode(", ", $row[category]));
 		for($x = 0; $x < $length; $x++){
 			$current = explode(", ", $row[category])[$x];
 			//printf(" %s - %s<br/>\n", $row[name], $current);
-			$sql4 = "INSERT INTO categories (id, category) VALUES ($row[id], $current)";
+			$sql4 = "INSERT INTO categories (id, category) VALUES ($row[id], '$current')";
 			$dbh->exec($sql4);
 	}
 }	
