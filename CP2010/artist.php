@@ -1,11 +1,22 @@
 <?php
 include("dbconnect.php")
+
+//TODO
+// Start on image upload code
+//feat artist unset
+//finalise user inputs
+
 ?>
 <!doctype html>
 <html>
 <head>
 <meta charset="UTF-8">
 <title>2010 Milestone 1</title>
+
+
+
+
+
 
 
 <style>
@@ -41,6 +52,15 @@ include("dbconnect.php")
       <input type="text" name="contact" id="contact">
     </p>
 	<p>
+	   <label for="featartist">Featured Artist: </label>
+	   <input type="radio" name="featartist"
+			<?php if (isset($featartist) && $featartist=="Y") echo "checked"?>
+			value="Y">Yes
+			<input type="radio" name="featartist"
+			<?php if (isset($featartist) && $featartist=="N") echo "checked";?>
+			value="N">No
+	</p>
+	<p>
       <label for="perf_date">Performance Date: </label>
       <input type="text" name="perf_date" id="perf_date">
     </p>
@@ -58,6 +78,7 @@ include("dbconnect.php")
 	</p>
     <p>
         <input type="submit" name="submit" id="submit" value="Insert Entry">
+		<input type='hidden' name='id' value='$row[id]' />
     </p>
 	
 </fieldset>
@@ -72,7 +93,7 @@ foreach ($dbh->query($sql) as $row){
 ?>
 <form id="deleteForm" name="deleteForm" method="post" action="dbprocessartist.php">
 <?php
-	echo "<input type='text' name='name' value='$row[name]' /> <input type='text' name='details' value='$row[details]' /> <input type='text' name='contact' value='$row[contact]' /> <input type='text' name='perf_date' value='$row[perf_date]' /> <input type='text' name='perf_loc' value='$row[perf_loc]' /> <input type='text' name='category' value='$row[category]' />\n";
+	echo "<input type='text' name='name' value='$row[name]' /> <input type='text' name='details' value='$row[details]' /> <input type='text' name='contact' value='$row[contact]' />  <input type = 'text' name = 'featartist' value = '$row[featartist]' /> <input type='text' name='perf_date' value='$row[perf_date]' /> <input type='text' name='perf_loc' value='$row[perf_loc]' /> <input type='text' name='category' value='$row[category]' />\n";
 	echo "<input type='hidden' name='id' value='$row[id]' />";
 ?>
 <input type="submit" name="submit" value="Update Entry" />
