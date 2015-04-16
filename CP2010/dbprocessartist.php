@@ -18,14 +18,13 @@ include("dbconnect.php");
 <?php
 
 
-
-
  if ($_REQUEST['submit'] == "Insert Entry"){
 	$sql = "INSERT INTO artist (name, details, contact, perf_date, perf_loc, category) VALUES ('$_REQUEST[name]', '$_REQUEST[details]', '$_REQUEST[contact]', '$_REQUEST[perf_date]', '$_REQUEST[perf_loc]', '$_REQUEST[category]')";
     if($dbh->exec($sql)){
         echo 'inserted';
-    }else{ echo 'not inserted';}
-
+    }else{ echo 'not inserted';
+	}
+	
      
      
 	$test = "SELECT * FROM artist WHERE name = '$_REQUEST[name]'";
@@ -56,7 +55,8 @@ include("dbconnect.php");
 	$sql = "UPDATE artist SET name = '$_REQUEST[name]', details = '$_REQUEST[details]', contact = '$_REQUEST[contact]', perf_date = '$_REQUEST[perf_date]', perf_loc = '$_REQUEST[perf_loc]', category = '$_REQUEST[category]' WHERE id = '$_REQUEST[id]'";
     if($dbh->exec($sql)){
         echo 'updated';
-    }else{ echo 'not updated';}
+    }else{ echo 'not updated';
+	}
 
 	$sql2 = "DELETE FROM categories WHERE id = '$_REQUEST[id]'";
 	$dbh->exec($sql2); 
@@ -80,6 +80,6 @@ include("dbconnect.php");
 $dbh = null;
 ?>
 <br/>
-<a href = "artist.php">Return to Artist Page</a>;
+<a href = "artist.php">Return to Artists Page</a>;
 </body>
 </html>
