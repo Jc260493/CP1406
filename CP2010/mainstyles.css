@@ -1,0 +1,258 @@
+@charset "utf-8";
+html, body{
+	margin:0;
+	padding:0;
+	height:100%;
+}
+body{
+	background-image:url(TCMCbackground.jpg);
+	height:100%;
+}
+#container{
+	height:100%;
+}
+#logo{
+	margin-left:auto;
+	margin-right:auto;
+	width:900px;
+	height:100px;
+	align-content:center;
+	text-align:center;
+	margin-bottom:0;
+	padding-bottom:0;
+
+}
+#navbar{
+	margin-top:-5px;
+	width:900px;
+}
+nav ul ul {
+	display: none;
+	
+}
+
+nav ul li:hover > ul {
+	display: block;
+}
+nav ul{
+	background-color: #000000;
+	padding: 0 20px;
+	position:relative;
+	list-style: none;
+	display: inline-table;
+	width:auto;
+	margin:0px;
+	
+}
+nav ul:after {
+	content: ""; clear: both; display: block;
+}
+nav ul li {
+	float: left;
+	min-width:172px;
+	width:172px;
+}
+nav ul li:hover {
+	background: #4b545f;
+	background: linear-gradient(top, #4f5964 0%, #5f6975 40%);
+	background: -moz-linear-gradient(top, #4f5964 0%, #5f6975 40%);
+	background: -webkit-linear-gradient(top, #4f5964 0%,#5f6975 40%);
+}
+nav ul li:hover a {
+	color:#FBFBFB;
+}
+	
+nav ul li a {
+	display: block;
+	padding: 10px 40px;
+	color: #FDFDFD;
+	text-decoration: none;
+}
+nav ul ul {
+	background: #5f6975;
+	border-radius: 0px;
+	padding: 0;
+	position: absolute;
+	top: 100%;
+}
+nav ul ul li {
+	float: none; 
+	border-top: 1px solid #6b727c;
+	border-bottom: 1px solid #575f6a;
+	position: relative;
+}
+nav ul ul li a {
+	padding: 15px 40px;
+	color: #fff;
+}	
+nav ul ul li a:hover {
+		background-color: #4b545f;
+}
+#accountoptions{
+	padding-top: 25px;
+	font:#d0c944;
+	width: 900px;
+	height: 50px;
+}
+#signupdiv{
+width: 50%;
+text-align: right;
+	float: left;
+}
+#logindiv{
+width: 50%;
+text-align: left;
+float: right;
+}
+#content{
+	margin-top:-25px;
+	background:#d0c9c9;
+	min-height:100%;
+}
+#Title{
+	padding:15px;
+}
+#image{
+	text-align:left;
+	margin-left:10px;
+}
+#text{
+	position:relative;
+	width:300px;
+	left:62%;
+	bottom:285px;
+}
+
+#link{
+	position:relative;
+	bottom:130px;
+	text-decoration:none;
+	color:#000000;
+}
+body a {
+    color: #000000;
+}
+#footer{
+	background: #000000;
+	height: 25px;
+	color: #FFFFFF;
+	text-decoration:none;
+}
+#footer a{
+   color: #FFFFFF; 
+}
+#signupbutton {
+	font-size: 150%;
+	font-weight: bold;
+	background-color: #000000;
+	color: #3498b8;
+	border-radius: 25px;
+	border: solid #3498b8 1px;
+}
+
+#loginbutton {
+	font-size: 150%;
+	font-weight: bold;
+	background-color: #000000;
+	color: #31c465;
+	border-radius: 25px;
+	border: solid #31c465 1px;
+}
+
+#logoutbutton {
+	font-size: 150%;
+	font-weight: bold;
+	background-color: #000000;
+	color: #f06f33;
+	border-radius: 25px;
+	border: solid #f06f33 1px;
+}
+
+#loginbutton:hover {
+	color: #ffffff;
+	border: solid #000000 1px;
+}
+
+#logoutbutton:hover {
+	color: #ffffff;
+	border: solid #000000 1px;
+}
+
+#signupbutton:hover {
+	color: #ffffff;
+	border: solid #000000 1px;
+}
+#membershipdiv {
+width: 100%;
+}
+
+#memsignupdiv {
+	width: 100%;
+	border: solid #000000 1px;
+	float: center;
+}
+
+#memlogindiv {
+	width: 100%;
+	border: solid #000000 1px;
+	float: center;
+}
+#logintable{
+margin: 0 auto;
+}
+#signuptable{
+ margin: 0 auto;
+}
+#updatemembertable{
+margin: 0 auto;
+border: solid #000000 1px;
+}
+	img.center {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+   #artistsdiv {
+		font-weight: bold;
+		text-align: center; 
+
+	}
+
+	#singleartistdiv {
+		border-width: 1px;
+		border-bottom:  solid #7e7e7e;
+		padding-bottom: 2%;
+	}
+	#singlediv {
+		border-width: 1px;
+		border-bottom:  solid #7e7e7e;
+		border-top: solid #7e7e7e;
+		padding-top: 2%;
+		padding-bottom: 1%;
+	}
+
+
+	#imageContainer {
+		width: 45%;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+	}
+	#imageContainer img {
+		width: 100%;
+		height: auto;
+	}
+	#insertForm {
+		text-align: left;
+	}
+	#alterForm {
+		text-align: left;
+	}
+h2{
+text-align: center;
+}
+#fullartistdiv{
+padding-top: 2%;
+padding-left: 2%;
+padding-right: 2%;}
