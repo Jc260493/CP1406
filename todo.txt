@@ -1,0 +1,20 @@
+TODO
+
+
+CP2010
+
+Events - copied from Artist + sort by date, old ones expire, links to relevant artist
+Bulletin Board - copied from Artist + old ones expire, registered users can submit to board
+Membership - encrypted password
+
+CP1406?
+
+Not sure if you've done any of this, this is just a rough list of what needs to be done to finish assignment
+
+Artist - make look good with div & css
+Events - make look good with div & css
+Bulletin Board - make look good with div & css
+Membership - make look good with div & css, create page describing membership benefits, link to paypal for membership payment
+Feeder Page - page on instruments? or whatever you've decided to do for this page
+About Us (Brief History, Contact and Sponsorship Pages) - Copy paste from existing site and add/remove whatever, make look good with div & css
+
